@@ -11,14 +11,10 @@ body {
 .container {
   text-align: center;
 }
-.work-title {
+.work-head {
+  color: #555;
+  align-items: center;
   text-align: center;
-  margin-top: 12px;
-  margin-left: 20px;
-  height: 100%;
-  width: 80%;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .image-bg-fluid-height,
@@ -115,7 +111,7 @@ footer {
 }
 .expand {
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #555;
     cursor: pointer;
 }
@@ -171,4 +167,11 @@ span {
 .london {
     background: url("http://placehold.it/50x50") top left no-repeat;
     background-size: cover;
+}
+.skill {
+  color: rgb(255,255,255);
+  background-color: rgb(105,105,105);
+  width:auto;
+  text-align: center;
+  display: inline-block;
 }
