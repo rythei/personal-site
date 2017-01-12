@@ -11,6 +11,15 @@ body {
 .container {
   text-align: center;
 }
+.work-title {
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 20px;
+  height: 100%;
+  width: 80%;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 .image-bg-fluid-height,
 .image-bg-fixed-height {
@@ -118,8 +127,9 @@ h2 {
 }
 span {
     font-size: 12.5px;
+    text-align: center;
 }
-#left,#right{
+#right{
     display: table;
 }
 #sup{
@@ -162,4 +172,3 @@ span {
     background: url("http://placehold.it/50x50") top left no-repeat;
     background-size: cover;
 }
-.newyork {
