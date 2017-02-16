@@ -139,7 +139,7 @@ type="application/octet-stream" download="theisenResume102016.pdf">resume</a>.</
                         from the website. Ultimately we decided that the best means to implement this was through a peer ranking system: students would rank
                         other students submissions based on a pre-defined set of criteria. The remaining questions was how to do this without creating adverse
                         incentives for students to rate others intentionally poorly. My solution is as follows:
-                        for each submission, the submitting student must "peer rank" three other submissions before his/her own can be considered. After this, my
+                        for each submission, the submitting student must "peer rank" three other submissions - from best to worst - before his/her own can be considered. After this, my
                         algorithm aggregates the groups of 3 sub-rankings into an ordered ranking of the entire population. From here, I update
                         global rankings of each individual who submitted a project using a generalization of the ELO ranking system called TrueSkill.
                         The resulting system requires an individual to compete in an approximately four competitions before the algorithm begins to
