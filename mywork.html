@@ -139,10 +139,15 @@ type="application/octet-stream" download="theisenResume102016.pdf">resume</a>.</
                         from the website. Ultimately we decided that the best means to implement this was through a peer ranking system: students would rank
                         other students submissions based on a pre-defined set of criteria. The remaining questions was how to do this without creating adverse
                         incentives for students to rate others intentionally poorly. My solution is as follows:
-                        for each submission, the submitting student must "peer rank" three other submissions before his/her own can be considered.
+                        for each submission, the submitting student must "peer rank" three other submissions before his/her own can be considered. After this, my
+                        algorithm aggregates the groups of 3 sub-rankings into an ordered ranking of the entire population. From here, I update
+                        global rankings of each individual who submitted a project using a generalization of the ELO ranking system called TrueSkill.
+                        The resulting system requires an individual to compete in an approximately four competitions before the algorithm begins to
+                        reflect the true rankings of individuals.
                       </p><p>
                         The repository for my code implementing this ranking scheme can be found <a href = "https://github.com/rythei/ranking_backend">here</a>.
                         To learn more about Mindspark, or to sign up to host or compete in a competition, visit <a href = "https://mindspark.io/">Mindspark.io</a>.
+                      </p>
                         </span>
                         </div>
                     </div>
@@ -174,11 +179,10 @@ type="application/octet-stream" download="theisenResume102016.pdf">resume</a>.</
                         The main aim of our research was to determine a sufficient condition that would guarantee the system's
                         convergence to some form of "flocking" behavior. Indeed, we were able to prove that, given a particular property
                         of the influence function, the system would converge to a "flock". Below is a numerical illustration of such
-                        a convergence, randomzing the ititial velocities of agents, in MATLAB:
+                        a convergence, randomzing the initial velocities of agents, in MATLAB:
                       </p><p>
-                        <video width="320" height="240" controls>
+                        <video width="320" height="240" controls="controls">
                           <source src="./StablePotentialFlock.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
                         </video>
                       </p><p>
                         We have presented our work at the Joint Mathematics Meetings in Seattle (ref: <a href="https://jointmathematicsmeetings.org/amsmtgs/2181_abstracts/1116-vc-2741.pdf">1116-VC-2741</a>), and have
