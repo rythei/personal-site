@@ -18,6 +18,9 @@
     <!-- Custom CSS -->
     <link href="css/full-width-pics.css" rel="stylesheet">
 
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,72 +69,67 @@
 
     <!-- Content Section -->
     <section>
-      <div class="work-head">To get in contact with me, <a href="mailto:ryan.theisen@asu.edu">email me</a> or fill
-        out the form below. </div>
-      <form name="htmlform" method="post" action="html_form_send.php">
-      <table width="450px">
-      </tr>
-      <tr>
-       <td valign="top">
-        <label for="first_name">First Name *</label>
-       </td>
-       <td valign="top">
-        <input  type="text" name="first_name" maxlength="50" size="30">
-       </td>
-      </tr>
+      <h1 class="section-heading" style='text-align:center'>Contact</h1>
+      <div class="work-head"><h4>To get in contact with me, <a href="mailto:ryan.theisen@asu.edu">email me</a> or fill
+        out the form below.</h4> </div>
 
-      <tr>
-       <td valign="top"">
-        <label for="last_name">Last Name *</label>
-       </td>
-       <td valign="top">
-        <input  type="text" name="last_name" maxlength="50" size="30">
-       </td>
-      </tr>
-      <tr>
-       <td valign="top">
-        <label for="email">Email Address *</label>
-       </td>
-       <td valign="top">
-        <input  type="text" name="email" maxlength="80" size="30">
-       </td>
+      <div class="container">
+	<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
 
-      </tr>
-      <tr>
-       <td valign="top">
-        <label for="telephone">Telephone Number</label>
-       </td>
-       <td valign="top">
-        <input  type="text" name="telephone" maxlength="30" size="30">
-       </td>
-      </tr>
-      <tr>
-       <td valign="top">
-        <label for="comments">Message *</label>
-       </td>
-       <td valign="top">
-        <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-       </td>
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+            </div>
 
-      </tr>
-      <tr>
-       <td colspan="2" style="text-align:center">
-        <input type="submit" value="Submit">
-       </td>
-      </tr>
-      </table>
-      </form>
-    </section>
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </div>
 
-    <!-- Fixed Height Image Aside -->
-    <!-- Image backgrounds are set within the full-width-pics.css file. -->
-    <aside class="image-bg-fixed-height"></aside>
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+</div>
+
 
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
+              <p>
+              <a class="btn btn-social-icon btn-github" href="https://github.com/rythei">
+                <span class="fa fa-github">
+              </span></a>
+              <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/rythei/">
+                <span class="fa fa-instagram">
+              </span></a></p>
                 <div class="col-lg-12">
                     <p>Copyright &copy; Ryan Theisen 2017</p>
                 </div>

@@ -12,6 +12,17 @@ html {
 body {
   margin: 0;
 }
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: red;
+}
 article,
 aside,
 details,
