@@ -1605,7 +1605,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 700px
   }
 }
 @media (min-width: 1200px) {
@@ -2106,7 +2106,7 @@ pre code {
     float: left;
   }
   .col-lg-12 {
-    width: 100%;
+    width: 80%;
   }
   .col-lg-11 {
     width: 91.66666667%;
@@ -4275,7 +4275,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0 0 0px;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -4503,8 +4503,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
+/* background-color: #f8f8f8;*/
 .navbar-default {
-  background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
